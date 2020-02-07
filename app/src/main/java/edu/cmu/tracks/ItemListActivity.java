@@ -3,10 +3,6 @@ package edu.cmu.tracks;
 import android.app.ProgressDialog;
 import android.media.MediaPlayer;
 import android.os.Bundle;
-import android.view.View;
-
-import com.google.android.material.floatingactionbutton.FloatingActionButton;
-import com.google.android.material.snackbar.Snackbar;
 
 import java.util.List;
 
@@ -45,15 +41,6 @@ public class ItemListActivity extends AppCompatActivity implements IData {
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
         toolbar.setTitle(getTitle());
-
-        FloatingActionButton fab = findViewById(R.id.fab);
-        fab.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                        .setAction("Action", null).show();
-            }
-        });
 
         if (findViewById(R.id.item_detail_container) != null) {
             // The detail container view will be present only in the
