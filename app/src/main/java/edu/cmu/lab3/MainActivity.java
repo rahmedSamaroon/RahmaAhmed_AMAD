@@ -77,18 +77,23 @@ public class MainActivity extends AppCompatActivity {
                 addListener = new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
+
                         EditText grocery_item = alertDialog.findViewById(R.id.grocery_item);
                         EditText quantity = alertDialog.findViewById(R.id.quantity);
 
-                        GroceryItem item = new GroceryItem(grocery_item.getText().toString(),
-                                Integer.parseInt(quantity.getText().toString()));
+                        if(grocery_item.getText().toString() != null){
+                            GroceryItem item = new GroceryItem(grocery_item.getText().toString(),
+                                    Integer.parseInt(quantity.getText().toString()));
 
-                        items.add(item);
-                        model.insertItem(item);
 
-                        Snackbar.make(view, "Item added", Snackbar.LENGTH_LONG)
-                                .setAction("Action", null).show();
+                            items.add(item);
+                            model.insertItem(item);
 
+                            Snackbar.make(view, "Item added", Snackbar.LENGTH_LONG)
+                                    .setAction("Action", null).show();
+                        }
+
+                        alertDialog.dismiss();
                     }
                 };
 
