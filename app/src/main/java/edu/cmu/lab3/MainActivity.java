@@ -81,7 +81,7 @@ public class MainActivity extends AppCompatActivity {
                         EditText grocery_item = alertDialog.findViewById(R.id.grocery_item);
                         EditText quantity = alertDialog.findViewById(R.id.quantity);
 
-                        if(grocery_item.getText().toString() != null){
+                        if(!grocery_item.getText().toString().isEmpty()){
                             GroceryItem item = new GroceryItem(grocery_item.getText().toString(),
                                     Integer.parseInt(quantity.getText().toString()));
 
@@ -91,9 +91,9 @@ public class MainActivity extends AppCompatActivity {
 
                             Snackbar.make(view, "Item added", Snackbar.LENGTH_LONG)
                                     .setAction("Action", null).show();
+                        }else {
+                            alertDialog.dismiss();
                         }
-
-                        alertDialog.dismiss();
                     }
                 };
 
