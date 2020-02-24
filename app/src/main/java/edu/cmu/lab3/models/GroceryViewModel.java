@@ -2,7 +2,6 @@ package edu.cmu.lab3.models;
 
 import android.app.Application;
 import android.content.Context;
-import android.util.Log;
 
 import java.util.List;
 

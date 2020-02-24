@@ -2,7 +2,6 @@ package edu.cmu.lab3;
 
 import android.content.DialogInterface;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -31,7 +30,7 @@ public class MainActivity extends AppCompatActivity {
     private DialogInterface.OnClickListener cancelListener;
     private GroceryListAdapter adapter;
     private RecyclerView recyclerView;
-    private List<GroceryItem> items = new ArrayList<>();;
+    private List<GroceryItem> items = new ArrayList<>();
     private GroceryViewModel model;
 
     @Override
@@ -81,7 +80,7 @@ public class MainActivity extends AppCompatActivity {
                         EditText grocery_item = alertDialog.findViewById(R.id.grocery_item);
                         EditText quantity = alertDialog.findViewById(R.id.quantity);
 
-                        if(!grocery_item.getText().toString().isEmpty()){
+                        if (!grocery_item.getText().toString().isEmpty()) {
                             GroceryItem item = new GroceryItem(grocery_item.getText().toString(),
                                     Integer.parseInt(quantity.getText().toString()));
 
@@ -91,8 +90,6 @@ public class MainActivity extends AppCompatActivity {
 
                             Snackbar.make(view, "Item added", Snackbar.LENGTH_LONG)
                                     .setAction("Action", null).show();
-                        }else {
-                            alertDialog.dismiss();
                         }
                     }
                 };
@@ -110,8 +107,6 @@ public class MainActivity extends AppCompatActivity {
                 alertDialog.show();
             }
         });
-
-
 
 
     }
