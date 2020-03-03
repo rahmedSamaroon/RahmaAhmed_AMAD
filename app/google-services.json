@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "190457700609",
+    "firebase_url": "https://pharma-4f29a.firebaseio.com",
+    "project_id": "pharma-4f29a",
+    "storage_bucket": "pharma-4f29a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:190457700609:android:67ee43c8b730a88c31bb00",
+        "android_client_info": {
+          "package_name": "edu.cmu.lab4"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "190457700609-su5d5of1q2as5n61p80er9n2l235ekal.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "edu.cmu.lab4",
+            "certificate_hash": "9949e54ed8ea2ec47c1be374131db363d08f10fd"
+          }
+        },
+        {
+          "client_id": "190457700609-4p8336e4vjs2plogttk9vf8fi2qf52hc.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBKLmbHFZuo6wQ6GKsf7QQK49rVJbNPM08"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "190457700609-4p8336e4vjs2plogttk9vf8fi2qf52hc.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
